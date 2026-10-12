@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Environment (never commit secrets; keep .env.example)
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local Docker volumes / data
+pgdata/
+pgdata_dev/
+postgres-data/
+
+# Prisma
+backend/prisma/*.db
+backend/prisma/*.db-journal
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Claude Code (local settings only; skills and Spec Kit files are versioned)
+.claude/settings.local.json
